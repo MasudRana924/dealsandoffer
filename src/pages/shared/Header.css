@@ -1,0 +1,122 @@
+.menu-bar{
+    width:100%;
+    height:80px;
+    display:flex;
+}
+.menubar-left{
+    width:20%;
+   
+}
+.menubar-right{
+    width:40%;
+}
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    padding: 10px 30px;
+    text-align: start;
+    position: relative;
+    margin-left: -20px;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 16px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 8px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    margin-left: -60px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+  .menubar-Cart{  
+      display: flex;
+  }
+.menubar-Cart input{
+margin-top: 15px;
+border:1px solid gainsboro;
+border-radius: 5px;
+width:270px;
+padding-left: 30px;
+font-size: 14px;
+height:30px;
+}
+.search-icon{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.cart-btn{
+    height:40px;
+    margin-top: 10px;
+    border:none;
+    background-color: #ffffff;
+    margin-left: 20px;
+    }
+    .item-cart{
+    position:absolute;
+    margin-left: -18px;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    background-color:limegreen;
+    border-radius: 10px;
+    width:20px;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.login-btn{
+    background-color: white;
+    border:1px solid white;
+    margin-top: 10px;
+    margin-left: 10px;
+    color:black;
+    padding-top: 5px;
+    font-size: 16px;
+    
+}

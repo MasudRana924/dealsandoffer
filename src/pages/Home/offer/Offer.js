@@ -1,0 +1,41 @@
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import img from '../../../Imges/apexoffer.webp'
+import img2 from '../../../Imges/apexoffer2.webp'
+import img3 from '../../../Imges/bataoffer.webp'
+import img4 from '../../../Imges/bataoofer2.webp'
+import './Offer.css'
+
+const Offer = () => {
+    return (
+        <Container fluid className="mt-5">
+
+            <Row xs="1" md="3">
+                <Col>
+                    <a href="https://www.apex4u.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={img} alt="" className="offerimg-left " />
+                    </a>
+                </Col>
+                <Col>
+                    <Row xs="1">
+                        <Col>
+                            <img src={img2} alt="" className="img-fluid" />
+                        </Col>
+                    </Row>
+                    <Row className="mt-1" xs="1">
+                        <Col>
+                            <img src={img3} alt="" className="img-fluid" />
+                        </Col>
+                    </Row>
+                </Col>
+                <Col>
+                    <img src={img4} alt="" className="offerimg-right " />
+                </Col>
+            </Row>
+
+
+        </Container>
+    );
+};
+
+export default Offer;
