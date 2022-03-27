@@ -60,8 +60,8 @@ const Shoes = () => {
     };
     return (
         <Container fluid className="mt-5">
-            <Row xs="2" md="2">
-                <Col md="3">
+            <Row xs="1" md="2">
+                <Col md="3" className="mt-3">
                     <div className="shoes-left-sidebar">
                         <h2>Shoes </h2>
                         <hr className="shoes-hr" />
@@ -72,7 +72,7 @@ const Shoes = () => {
                     </div>
 
                 </Col>
-                <Col md="8" >
+                <Col md="8" className="mt-3">
                     <Slider {...Rsettings}>
                         {
                             shoes.map(shoe => (

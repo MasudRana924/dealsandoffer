@@ -11,12 +11,12 @@ const Offer = () => {
         <Container fluid className="mt-5">
 
             <Row xs="1" md="3">
-                <Col>
+                <Col className="mt-3">
                     <a href="https://www.apex4u.com/" target="_blank" rel="noopener noreferrer">
                         <img src={img} alt="" className="offerimg-left " />
                     </a>
                 </Col>
-                <Col>
+                <Col className="mt-3">
                     <Row xs="1">
                         <Col>
                             <img src={img2} alt="" className="img-fluid" />
@@ -28,7 +28,7 @@ const Offer = () => {
                         </Col>
                     </Row>
                 </Col>
-                <Col>
+                <Col className="mt-3">
                     <img src={img4} alt="" className="offerimg-right " />
                 </Col>
             </Row>

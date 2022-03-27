@@ -1,80 +1,126 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Offcanvas } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartPlus,faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faCartPlus, faSearch, faBars } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     const Cart = <FontAwesomeIcon icon={faCartPlus} className="cart-icon" />
     const search = <FontAwesomeIcon icon={faSearch} className="cart-icon" />
+    const bar = <FontAwesomeIcon icon={faBars} className="cart" />
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    const [inputshow, setInputShow] = useState(false);
     return (
-        <Container fluid>
-            <div className="menu-bar">
-                <div className="menubar-left">
-                    <h1 className="logo">OffersBD</h1>
-                </div>
+        <div>
 
-                <div className="menubar-right" >
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact us</a>
-                        </li>
-                        <li><a href="#">Offers <i class="fas fa-caret-down"></i></a>
-
-                            <div class="dropdown-menu">
-                                <ul>
-                                    <li><a href="#">Daraz</a></li>
-                                    <li><a href="#">Chaldal</a></li>
-                                    <li><a href="#">Ajker Deal</a></li>
-                                    <li><a href="#">Apex</a></li>
-                                    <li><a href="#">Bata</a></li>
-                                    <li><a href="#">Lotto</a></li>
-                                    <li><a href="#">Yellow</a></li>
-                                    <li><a href="#">Richman</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">Brand <i class="fas fa-caret-down"></i></a>
-
-                            <div class="dropdown-menu">
-                                <ul>
-                                    <li><a href="#">Apex</a></li>
-                                    <li><a href="#">Bata</a></li>
-                                    <li><a href="#">Lotto</a></li>
-                                    <li><a href="#">Yellow</a></li>
-                                    <li><a href="#">Richman</a></li>
-                                    <li><a href="#">Cats Eye</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div className="menubar-Cart">
-                    <div>
-                        <span className="search-icon">{search}</span>
-                    <input type="text" placeholder=" search here " />
+            <Container fluid>
+                <div className="menu-bar">
+                    <div className="menubar-left">
+                        <h1 className="logo">OffersBD</h1>
                     </div>
-           
-                    <Link to="/cart">
-                        <button className=" cart-btn">
-                            {Cart}
-                        </button>
-                        <span className="item-cart"> 0</span>
-                    </Link>
 
-                    <Link to="/cart">
-                        <button className="login-btn">
-                         Deals with us - login
-                        </button>
-                        
-                    </Link>
+                    <div className="menubar-right" >
+                        <ul>
+                            <li> <Link to="/">Home</Link> </li>
+                            {/* <li><a href="#">About</a></li> */}
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
+
+                            <li><Link to="">Category</Link>
+
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><Link to="/grocery">Grocery</Link></li>
+                                        <li><Link to="/electronics">Electronics</Link></li>
+                                        <li><Link to="/fashion">Fashion</Link></li>
+                                        <li><Link to="/beauty">Beauty</Link></li>
+                                        <li><Link to="/food">Food</Link></li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><Link to="">Offers</Link>
+
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><Link to="/daraz">Daraz</Link></li>
+                                        <li><Link to="/chaldal">Chaldal</Link></li>
+                                        <li><Link to="/apex">Apex</Link></li>
+                                        <li><Link to="/bata">Bata</Link></li>
+                                        <li><Link to="/yellow">Yellow</Link></li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div className="menubar-Cart">
+                        <div>
+                            <span className="search-icon">{search}</span>
+                            <input type="text" placeholder=" search here " />
+                        </div>
+
+                        <Link to="/cart">
+                            <button className=" cart-btn">
+                                {Cart}
+                            </button>
+                            <span className="item-cart"> 0</span>
+                        </Link>
+
+                        <Link to="/login">
+                            <button className="login-btn">
+                                Deals with us - login
+                            </button>
+
+                        </Link>
+                    </div>
                 </div>
-            </div>
-        </Container>
+            </Container>
+
+            {/* for 480px device  */}
+            <Container fluid className="header-section" >
+                <Row className="header-section" xs="1">
+                    <Col xs="12" className="d-flex">
+                        <button className="bar-btn" onClick={handleShow}>
+                            {bar}
+                        </button>
+                        <h2 className="header-title">OffersBd</h2>
+                        <button className="search-btn" onClick={() => setInputShow(true)}>
+                            {search}
+                        </button>
+                        <Link to="/cart">
+                            <button className=" cart-btn">
+                                {Cart}
+                            </button>
+                            <span className="item-cart"> 0</span>
+                        </Link>
+
+
+                        <Offcanvas placement="start" show={show} onHide={handleClose} className="w-50 mx-auto">
+                            <Offcanvas.Header closeButton className="nav-header" >
+                                <Offcanvas.Title></Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body className="mt-1">
+
+                            </Offcanvas.Body>
+                        </Offcanvas>
+                    </Col>
+                    {
+                        inputshow ? <div className="input-section" >
+                            <input type="text" placeholder="Search a product" />
+                        </div> : null
+                    }
+
+                </Row>
+            </Container>
+        </div>
     );
 };
 
