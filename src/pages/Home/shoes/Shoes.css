@@ -1,29 +1,7 @@
-.shoes-left-sidebar{
-    border:1px solid gainsboro;
-    height:320px;
-}
-.shoes-left-sidebar h2{
-    text-align: start;
-    font-size: 25px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-.shoes-hr{
-  border:2px solid red;
-}
-.shoes-left-sidebar p{
-    text-align: start;
-    font-size: 15px;
-    margin-left: 20px;
-}
-.arrow-icon{
-    font-size: 12px;
-    font-weight: 400;
-}
 
 .card-shoes{
     border:1px solid gainsboro;
-    width:200px;
+   
     margin-left: 10px;
     height:320px;
   
