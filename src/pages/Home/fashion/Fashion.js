@@ -23,7 +23,7 @@ const Fashion = () => {
         <Container fluid className="mt-5">
              <div className="grocery-header">
                 <div>
-                    <h2 className="grocery-title">Fashion - Best Seller </h2>
+                    <h2 className="grocery-title">Fashion - </h2>
                 </div>
                 <div className="grocery-brand-section">
                    <p className="grocery-brand">Yellow</p>

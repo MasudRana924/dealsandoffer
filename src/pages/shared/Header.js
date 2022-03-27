@@ -103,12 +103,49 @@ const Header = () => {
                         </Link>
 
 
-                        <Offcanvas placement="start" show={show} onHide={handleClose} className="w-50 mx-auto">
+                        <Offcanvas placement="start" show={show} onHide={handleClose} className="w-50 mx-auto bg-dark ">
                             <Offcanvas.Header closeButton className="nav-header" >
                                 <Offcanvas.Title></Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body className="mt-1">
 
+                                <h2 className="footwear-title">Footwer</h2>
+                                <hr className="hr" />
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Apex</Link>
+                                </p>
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Bata</Link>
+                                </p>
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Lotto</Link>
+                                </p>
+
+                                {/* fshion */}
+                                <h2 className="footwear-title">Fashion</h2>
+                                <hr className="hr" />
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Yellow</Link>
+                                </p>
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Richman</Link>
+                                </p>
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Zara</Link>
+                                </p>
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Catseye</Link>
+                                </p>
+                                {/* grocery */}
+                                <h2 className="footwear-title">Grocery</h2>
+                                <hr className="hr" />
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Daraz</Link>
+                                </p>
+                                <p className="footwear-text">
+                                    <Link to="/apex" className="footwear-link">Chaldal</Link>
+                                </p>
+                              
                             </Offcanvas.Body>
                         </Offcanvas>
                     </Col>
@@ -120,7 +157,7 @@ const Header = () => {
 
                 </Row>
             </Container>
-        </div>
+        </div >
     );
 };
 

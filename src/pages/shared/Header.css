@@ -222,4 +222,22 @@ background-color: #fff;
 border:none;
 font-size: 16px;
 }
+.footwear-title{
+  color:white;
+  font-size: 20px;
+}
+.hr{
+  color:gainsboro;
+ 
+}
+.footwear-text{
+  color:white;
+  font-size: 14px;
+  margin-top: -10px;
+}
+.footwear-link{
+  color:white;
+ text-decoration: none;
+}
+
 }

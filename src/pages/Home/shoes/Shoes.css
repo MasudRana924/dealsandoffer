@@ -1,9 +1,8 @@
 
 .card-shoes{
-    border:1px solid gainsboro;
-   
     margin-left: 10px;
     height:320px;
+    border:1px solid gainsboro;
   
 }
 .card-image{
@@ -17,7 +16,7 @@
     font-size: 12px;
 }
 .stock{
-    background-color: black;
+    background-color: orangered;
     color:white;
     font-size: 14px;
    width:60px;
@@ -38,4 +37,11 @@
 .slick-next:before{
     background-color: black;
    
+}
+@media only screen and (max-width: 400px) {
+
+    .feature-brand-title{
+        font-size: 16px;
+    }
+
 }

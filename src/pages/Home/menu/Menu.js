@@ -12,7 +12,7 @@ import img7 from '../../../Imges/easy.png'
 const Menu = () => {
     return (
         <Container fluid className="mt-5">
-            <h2 className="text-start fs-5">FEATURED BRAND </h2>
+            <h2 className="text-start  feature-brand-title">FEATURED BRAND </h2>
 
             <Row xs="1" md="3">
                 <Col className="mt-3">

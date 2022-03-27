@@ -14,7 +14,7 @@ const Electrics = () => {
     }, [])
     return (
         <Container fluid className="mt-3 w-75 mx-auto">
-            <Row xs="2" md="3">
+            <Row xs="1" md="3">
                {
                    electrics.map(electric=><Electric
                    electric={electric}

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Container, Col } from 'react-bootstrap';
+import {  Col } from 'react-bootstrap';
 import './Electric.css'
 
 const Electric = (props) => {
     const { name, img, price, brand, url } = props.electric
     return (
-        <Col xs="12" className="mt-3">
+        <Col  className="mt-3 mx-auto">
             <div className="electric-card">
-                <img src={img} className="electric-img" alt="" />
+                <img src={img} className="electric-img " alt="" />
                 <div>
                     <p className="electric-name">{name} </p>
                     <p className="electric-price">{price}tk </p>

@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap';
 const Grocerries = (props) => {
     const { name, price, img, stock, url, brand } = props.grocery
     return (
-        <Col className="mt-3">
+        <Col xs="12" className="mt-3">
             <div className="grocery-card">
                 <div className="grocery-card-left-section">
                     <img src={img} alt="" className="grocery-img  " />

@@ -161,33 +161,8 @@
   
   
   
-  @media only screen and (max-width: 400px) {
-    .footer-header{
-        width:100%;
-        overflow-x: hidden;
-    }
-    .google-apple{
-        margin-left: -50px;
-        margin-top:20px;
-    }
-   
-    .footer-icon{
-        margin-left: -140px;
-    }
-    .input-footer{
-        border:none;
-        outline-style: none;
-        margin-left: -5px;  
-    }
-    .chat-btn{
-        display: none;
-    }
-    .user-details , .contact-details{
-        margin-left: 5px;
-    }
-
-
-
+@media only screen and (max-width: 400px) {
+    
     .footer-section{
         height:120px;   
         /* display: block; */

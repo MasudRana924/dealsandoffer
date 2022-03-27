@@ -14,7 +14,7 @@ const Grocery = () => {
             })
     }, [])
     return (
-        <div id="grocery">
+       
         <Container fluid className="mt-5">
             <div className="grocery-header">
                 <div>
@@ -35,7 +35,7 @@ const Grocery = () => {
                  }
             </Row>
         </Container>
-        </div>
+       
     );
 };
 
